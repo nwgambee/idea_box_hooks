@@ -11,7 +11,7 @@ const App = () => {
   }
 
   const deleteIdea = (id) => {
-    setIdeas({ideas: ideas.ideas.filter(idea => idea.id !== id)})
+    setIdea({ideas: ideas.ideas.filter(idea => idea.id !== id)})
   }
 
   return (
