@@ -6,12 +6,12 @@ import CardContainer from '../CardContainer/CardContainer'
 const App = () => {
   const [ideas, setIdea] = useState({ideas: []});
 
-  const addIdea = () => {
-    console.log('adding idea');
+  const addIdea = (idea) => {
+    setIdea({ideas: [...ideas.ideas, idea]})
   }
 
-  const deleteIdea = () => {
-    console.log('deleting idea')
+  const deleteIdea = (id) => {
+    setIdeas({ideas: ideas.ideas.filter(idea => idea.id !== id)})
   }
 
   return (
